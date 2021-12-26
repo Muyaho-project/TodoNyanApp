@@ -81,6 +81,9 @@ fun TodoNavHost(
         composable(TodoScreen.My.name) {
             MyBody()
         }
+        composable(TodoScreen.Add.name) {
+            AddBody()
+        }
     }
 }
 

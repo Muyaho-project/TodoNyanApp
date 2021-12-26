@@ -17,6 +17,10 @@ enum class TodoScreen(
     My(
         title = "My",
         iconRes = R.drawable.ic_bottom_my
+    ),
+    Add(
+        title = "Add",
+        iconRes = R.drawable.ic_bottom_add
     );
 
     companion object {
@@ -25,6 +29,7 @@ enum class TodoScreen(
                 Home.name -> Home
                 Cat.name -> Cat
                 My.name -> My
+                Add.name -> Add
                 null -> Home
                 else -> throw IllegalArgumentException("Route $route is not recognized.")
             }
